@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'StarJedi';
+    src: url('/assets/fonts/Starjedi.ttf') format('truetype');
+}
+
+*{
+    margin: 0;
+    font-family: 'StarJedi', sans-serif;
+}
+
+h1{
+    color: yellow;
+}
+.loading {
+    display: none; 
+    width: 50px; 
+    height: 50px;
+}
+
+body{
+    background-image: url('/assets/imgs/stars_background.jpg'); 
+}
+
+#planetList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+#planetList button{
+   background-color: yellow;
+   border-radius: 20px;
+   border: 1px
+}
+
+.planetSection{
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: center;
+}
+
+.headerSection{
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.planetInfoSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.planetInformation{
+    background-color: rgba(192, 183, 183, 0.1);
+}
+.planetName h2{
+    background-color: rgba(192, 183, 183, 0.1);
+}
+
+#planetInfo{
+    color: yellow;
+}
+
+.planetName{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.planetInformation{
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 10px;
+    flex-direction: row;
+}
+
+.residentsSection{
+    display: flex;
+    justify-content: center;
+    color: yellow;
+}
+
+.residentsTable{
+    background-color: rgba(192, 183, 183, 0.1);
+}
+
+.residentsSection h2{
+    background-color: rgba(192, 183, 183, 0.1);
+}
+
+.residentsTable td, .residentsTable th{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.residentsTable tr:hover{
+    background-color: #f2f2f2;
+}
+.residentsTable th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    color: white;
+}
+
+.searchSection{
+    background-color: rgba(192, 183, 183, 0.1);
+}
+
+input{
+    background: none;
+    border: 0.1px solid;
+}

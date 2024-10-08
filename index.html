@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Censo Galático</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+<div class="headerSection">
+    <div>
+        <h1>Censo Galático</h1>
+    </div>
+    <div class="searchSection">
+        <form id="searchForm">
+            <input type="text" placeholder="Nome do planeta" id="planetName">
+            <button type="submit">Pesquisar</button>
+        </form>
+    </div>
+</div>
+<div class="planetSection">
+    <div id="planetList"></div>
+    <img id="planetListLoading" class="loading" src="https://i.gifer.com/ZKZg.gif" alt="Carregando planetas...">
+</div>
+<div class="planetInfoSection">
+    <div id="planetInfo"></div>
+</div>
+<div class="residentsSection">
+    <div id="residentsInfo"></div>
+    <img id="residentsLoading" class="loading" src="https://i.gifer.com/ZKZg.gif" alt="Carregando residentes...">
+</div>
+<script type="module" src="./assets/js/index.js"></script>
+</body>
+</html>

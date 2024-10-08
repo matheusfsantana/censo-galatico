@@ -8,10 +8,9 @@ let planets = []
 
 addEventListener('load', async () => {
     const planetListLoading = document.getElementById('planetListLoading');
+
     planetListLoading.style.display = 'block';
-
     await fetchPlanets();
-
     planetListLoading.style.display = 'none';
 
     showPlanets();
@@ -22,13 +21,12 @@ async function fetchPlanets(){
     let {results, next} = await res.json();
 
     planets.push(...results)
-    
+
     let nextUrl = next
 
     while(nextUrl){
         let res = await fetch(nextUrl);
         let {results: planet, next: nextRequest} = await res.json();
-        console.log(nextRequest)
         planets.push(...planet)
         nextUrl = nextRequest
     }
@@ -138,5 +136,3 @@ async function searchPlanet(planetName){
     let {results} = await res.json();
     showPlanetInfo(results[0])
 }
-
-await fetchPlanets();

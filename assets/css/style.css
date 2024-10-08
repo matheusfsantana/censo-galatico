@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'StarJedi';
-    src: url('./assets/fonts/Starjedi.ttf') format('truetype');
+    src: url('../fonts/Starjedi.ttf') format('truetype');
 }
 
 *{
@@ -18,7 +18,7 @@ h1{
 }
 
 body{
-    background-image: url('./assets/imgs/stars_background.jpg'); 
+    background-image: url('../imgs/stars_background.jpg'); 
 }
 
 #planetList{
